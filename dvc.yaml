@@ -1,0 +1,11 @@
+stages:
+
+  train:
+    cmd: python src/train.py
+
+    deps:
+      - data/dataset_yt_video.csv
+      - src/train.py
+
+    outs:
+      - models/youtube_views_model.pkl
